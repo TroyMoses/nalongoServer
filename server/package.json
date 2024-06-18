@@ -1,14 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "Bugema University website API",
+  "description": "Nalongo Lwokyaza Website API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
-  "author": "Bugema University",
+  "author": "Larks Tech Hub",
   "license": "ISC",
   "type": "module",
   "dependencies": {

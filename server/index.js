@@ -30,7 +30,7 @@ app.use(cors());
 
 // Health Check
 app.get("/", (req, res) => {
-  res.send("The Bugema University API is running fine.");
+  res.send("The API for Nalongo Lwokyaza Website is running fine.");
 });
 
 app.use("/auth", authRoutes);
