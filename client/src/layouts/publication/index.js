@@ -91,7 +91,7 @@ const Publication = () => {
   const fetchPublications = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://buweb.onrender.com/publication", {
+      const response = await axios.get("http://localhost:3001/publication", {
         headers: {
           Authorization: `Bearer ${token}`,
         }

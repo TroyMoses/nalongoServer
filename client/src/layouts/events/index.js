@@ -69,7 +69,7 @@ const Events = () => {
   const fetchEvents = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://buweb.onrender.com/events", {
+      const response = await axios.get("http://localhost:3001/events", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
