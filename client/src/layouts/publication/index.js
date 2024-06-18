@@ -122,7 +122,7 @@ const Publication = () => {
       formData.append("description", createFormFields.description);
       formData.append("publicationUrl", createFormFields.publicationUrl);
 
-      const response = await axios.post("https://buweb.onrender.com/publication/create", formData, {
+      const response = await axios.post("http://localhost:3001/publication/create", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`,
@@ -166,7 +166,7 @@ const Publication = () => {
       formData.append("description", editFormFields.description);
       formData.append("publicationUrl", editFormFields.publicationUrl);
 
-      await axios.patch(`https://buweb.onrender.com/publication/${editFormFields._id}/update`, formData, {
+      await axios.patch(`http://localhost:3001/publication/${editFormFields._id}/update`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data"
@@ -209,7 +209,7 @@ const Publication = () => {
 
   const handleDeletePublication = async (id) => {
     try {
-      await axios.delete(`https://buweb.onrender.com/publication/${id}/delete`, {
+      await axios.delete(`http://localhost:3001/publication/${id}/delete`, {
         headers: {
           Authorization: `Bearer ${token}`,
         }

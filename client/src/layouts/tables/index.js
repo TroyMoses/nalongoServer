@@ -64,7 +64,7 @@ const Tables = () => {
   const fetchSlides = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://buweb.onrender.com/slide",{
+      const response = await axios.get("http://localhost:3001/slide",{
         headers: {
           Authorization: `Bearer ${token}`,
         }
@@ -121,7 +121,7 @@ const Tables = () => {
       formData.append("title", editFormFields.title);
       formData.append("tagline", editFormFields.tagline);
   
-      await axios.patch(`https://buweb.onrender.com/slide/${editFormFields._id}/update`, formData, {
+      await axios.patch(`http://localhost:3001/slide/${editFormFields._id}/update`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data"
@@ -153,7 +153,7 @@ const Tables = () => {
 
   const handleDeleteSlide = async (id) => {
     try {
-      await axios.delete(`https://buweb.onrender.com/slide/${id}/delete`, {
+      await axios.delete(`http://localhost:3001/slide/${id}/delete`, {
         headers: {
           Authorization: `Bearer ${token}`,
         }

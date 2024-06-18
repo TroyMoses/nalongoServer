@@ -97,7 +97,7 @@ const Events = () => {
       formData.append("date", createFormFields.date);
       formData.append("location", createFormFields.location);
 
-      const response = await axios.post("https://buweb.onrender.com/events/create", formData, {
+      const response = await axios.post("http://localhost:3001/events/create", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: `Bearer ${token}`,
@@ -144,7 +144,7 @@ const Events = () => {
       formData.append("date", editFormFields.date);
       formData.append("location", editFormFields.location);
 
-      await axios.patch(`https://buweb.onrender.com/events/${editFormFields._id}/update`, formData, {
+      await axios.patch(`http://localhost:3001/events/${editFormFields._id}/update`, formData, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",
@@ -181,7 +181,7 @@ const Events = () => {
 
   const handleDeleteEvent = async (id) => {
     try {
-      await axios.delete(`https://buweb.onrender.com/events/${id}/delete`, {
+      await axios.delete(`http://localhost:3001/events/${id}/delete`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
