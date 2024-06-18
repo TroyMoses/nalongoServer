@@ -1,3 +1,4 @@
-# buweb-prot
- Bugema University Website Prototype
+# Nalongo Lwokyaza Foundation Server
+
+ Nalongo Lwokyaza Server Prototype
 

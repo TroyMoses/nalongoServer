@@ -1,15 +1,15 @@
 {
-  "name": "buweb-prototype",
+  "name": "nalongosrv-prototype",
   "version": "1.0.0",
   "author": "danielmarv",
   "license": "SEE LICENSE IN license.md",
-  "description": "ReactJS version of Bugema University Website",
+  "description": "ReactJS version of Nalongo Lwokyaza Web Server",
   "bugs": {
-    "url": "https://github.com/danielmarv/buweb-prot/issues"
+    "url": "https://github.com/TroyMoses/nalongoServer/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danielmarv/buweb-prot.git"
+    "url": "git+https://github.com/TroyMoses/nalongoServer.git"
   },
   "dependencies": {
     "@emotion/cache": "11.11.0",
