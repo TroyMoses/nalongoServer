@@ -69,7 +69,7 @@ const News = () => {
   const fetchNews = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("https://buweb.onrender.com/news", {
+      const response = await axios.get("http://localhost:3001/news", {
         headers: {
           Authorization: `Bearer ${token}`,
         }

@@ -26,7 +26,7 @@ const SignIn = () => {
     setError(null);
 
     try {
-      const loggedInResponse = await fetch("https://buweb.onrender.com/auth/login", {
+      const loggedInResponse = await fetch("http://localhost:3001/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

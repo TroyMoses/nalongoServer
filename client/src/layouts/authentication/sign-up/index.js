@@ -32,7 +32,7 @@ const SignUp = () => {
     e.preventDefault();
     try {
       setForm({ firstName: '', lastName: '', email: '', password: '' });
-      await axios.post("https://buweb.onrender.com/auth/register", form);
+      await axios.post("http://localhost:3001/auth/register", form);
       setSuccessMessage("User created successfully");
       navigate("/authentication/sign-in");
     } catch (error) {

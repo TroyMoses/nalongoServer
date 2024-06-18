@@ -41,15 +41,6 @@ const routes = [
     component: <Tables />,
     noCollapse: true,
   },
-  // {
-  //   type: "collapse",
-  //   name: "E",
-  //   key: "billing",
-  //   route: "/billing",
-  //   icon: <CreditCard size="12px" />,
-  //   component: <Billing />,
-  //   noCollapse: true,
-  // },
   {
     type: "collapse",
     name: "News",
